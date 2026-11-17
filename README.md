@@ -1,0 +1,1 @@
+# ios-screenshot-translator-shortcut
