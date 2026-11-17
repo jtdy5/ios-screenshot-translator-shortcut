@@ -1,0 +1,157 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+/* Begin PBXBuildFile section */
+		10000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000001 /* ContentView.swift */; };
+		10000004 /* TranslateScreenshotIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000003 /* TranslateScreenshotIntent.swift */; };
+		10000006 /* ImageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000005 /* ImageTranslator.swift */; };
+		10000008 /* QuickLookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000007 /* QuickLookView.swift */; };
+		10000014 /* ScreenshotTranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000013 /* ScreenshotTranslatorApp.swift */; };
+		10000016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10000015 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10000003 /* TranslateScreenshotIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateScreenshotIntent.swift; sourceTree = "<group>"; };
+		10000005 /* ImageTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTranslator.swift; sourceTree = "<group>"; };
+		10000007 /* QuickLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookView.swift; sourceTree = "<group>"; };
+		10000013 /* ScreenshotTranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTranslatorApp.swift; sourceTree = "<group>"; };
+		10000015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10000009 /* ScreenshotTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenshotTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		10000000 = {
+			isa = PBXGroup;
+			children = (
+				10000013 /* ScreenshotTranslatorApp.swift */,
+				10000001 /* ContentView.swift */,
+				10000003 /* TranslateScreenshotIntent.swift */,
+				10000005 /* ImageTranslator.swift */,
+				10000007 /* QuickLookView.swift */,
+				10000015 /* Assets.xcassets */,
+			);
+			path = ScreenshotTranslator;
+			sourceTree = "<group>";
+		};
+		1000000B = {
+			isa = PBXGroup;
+			children = (
+				10000009 /* ScreenshotTranslator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1000000A /* ScreenshotTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1000000F /* Build configuration list for PBXNativeTarget "ScreenshotTranslator" */;
+			buildPhases = (
+				1000000C /* Sources */,
+				10000017 /* Resources */,
+			);
+			buildRules = [];
+			dependencies = [];
+			name = ScreenshotTranslator;
+			productName = ScreenshotTranslator;
+			productReference = 10000009 /* ScreenshotTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1000000D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 10000010 /* Build configuration list for PBXProject "ScreenshotTranslator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10000000;
+			productRefGroup = 1000000B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1000000A /* ScreenshotTranslator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10000017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000016 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1000000C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000014 /* ScreenshotTranslatorApp.swift in Sources */,
+				10000002 /* ContentView.swift in Sources */,
+				10000004 /* TranslateScreenshotIntent.swift in Sources */,
+				10000006 /* ImageTranslator.swift in Sources */,
+				10000008 /* QuickLookView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		10000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenshotTranslator/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.ScreenshotTranslator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Debug;
+		};
+		10000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenshotTranslator/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.ScreenshotTranslator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY

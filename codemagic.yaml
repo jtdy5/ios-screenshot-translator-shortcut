@@ -1,0 +1,38 @@
+workflows:
+  ios-release-workflow:
+    name: Build iOS Translation Overlay IPA
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      vars:
+        BUNDLE_ID: "com.yourname.ScreenshotTranslator" # Change to your actual Bundle ID
+        XCODE_PROJECT: "ScreenshotTranslator.xcodeproj" # Change to your project name
+        XCODE_SCHEME: "ScreenshotTranslator" # Change to your scheme name
+      groups:
+        - appstore_credentials # Link environment variables set up in Codemagic UI
+    scripts:
+      - name: Initialize Keychain
+        script: |
+          keychain initialize
+      - name: Fetch Code Signing Files
+        script: |
+          # Automatically fetches or creates certificates and provisioning profiles via App Store Connect API
+          app-store-connect fetch-signing-files "$BUNDLE_ID" \
+            --type AD_HOC \
+            --issuer-id "$APP_STORE_CONNECT_ISSUER_ID" \
+            --key-id "$APP_STORE_CONNECT_KEY_IDENTIFIER" \
+            --private-key "$CERTIFICATE_PRIVATE_KEY"
+      - name: Add certificates to keychain
+        script: |
+          keychain add-certificates
+      - name: Set up code signing settings on Xcode project
+        script: |
+          xcode-project use-profiles
+      - name: Build ipa for device
+        script: |
+          xcode-project build-ipa \
+            --project "$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME" \
+            --archive-flags="-destination 'generic/platform=iOS'"
+    artifacts:
+      - build/ios/ipa/*.ipa
